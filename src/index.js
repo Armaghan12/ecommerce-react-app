@@ -4,8 +4,10 @@ function App() {
   return (
     <div>
       <h1>Our Products</h1>
-      <Product />
-      <Product />
+
+      <Product name="iPhone" price={1000} />
+      <Product name="Laptop" price={2000} />
+
     </div>
   );
 }
