@@ -1,9 +1,11 @@
-function Product({ name, price }) {
+function Product({ name, price, addToCart }) {
   return (
     <div>
       <h2>{name}</h2>
       <p>Price: ${price}</p>
-      <button>Add to Cart</button>
+      <button onClick={() => addToCart({ name, price })}>
+        Add to Cart
+      </button>
     </div>
   );
 }
